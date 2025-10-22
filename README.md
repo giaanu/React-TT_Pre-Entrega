@@ -23,7 +23,6 @@ Incluye un sistema de carrito funcional con **Context API**, persistencia en `lo
 | 🧱 Vite | Entorno de desarrollo rápido |
 | 🧭 React Router DOM | Manejo de rutas y navegación |
 | 💾 LocalStorage | Persistencia del carrito |
-| 🧰 Context API | Estado global del carrito |
 | 🎨 CSS Modules | Estilos modulares y personalizables |
 
 
@@ -31,21 +30,16 @@ Incluye un sistema de carrito funcional con **Context API**, persistencia en `lo
 
 ## 🧠 Estructura del proyecto
 src/
-├─ components/
-│ ├─ Header/
-│ ├─ Footer/
-│ ├─ ProductCard/
-│
-├─ contexts/
-│ └─ CartContext/
-│ ├─ CartProvider.jsx
-│ └─ useCartContext.jsx
-│
-├─ pages/
-│ ├─ Home/
-│ ├─ Detail/
-│ └─ Cart/
-│
-├─ App.jsx
-├─ main.jsx
-└─ App.css
+ ├── 🧩 components/
+ │   ├── Item/
+ │   ├── ItemDetail/
+ │   └── ItemDetailContainer/
+ |   └── ItemList/
+ │   ├── ItemListContainer/
+ │   ├── Nav/
+ │
+ │
+ ├── App.jsx
+ ├── App.css
+ ├── index.css
+ └── main.jsx
