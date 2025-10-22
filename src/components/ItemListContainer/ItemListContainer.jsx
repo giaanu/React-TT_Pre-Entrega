@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
+import { ItemList } from "../ItemList/ItemList";
 
 export const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
@@ -15,12 +16,13 @@ export const ItemListContainer = () => {
       .then((data) => {
         setProducts(data);
       })
-      .catch(() => {});
+      .catch((err) => {console.log(err)});
   }, []);
 
   return (
     <section>
       <h1>Bienvenido</h1>
+      <ItemList list = {products} />
     </section>
   );
-}
+};
