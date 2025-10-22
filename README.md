@@ -29,6 +29,7 @@ Incluye un sistema de carrito funcional con **Context API**, persistencia en `lo
 ---
 
 ## 🧠 Estructura del proyecto
+```bash
 src/
  ├── 🧩 components/
  │   ├── Item/
