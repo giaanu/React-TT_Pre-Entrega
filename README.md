@@ -1,16 +1,51 @@
-# React + Vite
+# 🏹 Ocarina Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Ocarina Store** es una tienda online inspirada en *The Legend of Zelda*, desarrollada con **React + Vite**, que utiliza la [FakeStore API](https://fakestoreapi.com/) para mostrar productos dinámicamente.  
+Incluye un sistema de carrito funcional con **Context API**, persistencia en `localStorage` y un diseño temático verde y dorado que evoca la estética de Hyrule.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Características principales
 
-## React Compiler
+- 💾 **Carrito persistente**   
+- 🧭 **Ruteo con React Router**.  
+- ⚡ **Vite**
+- 🎨 **Diseño Legend of Zelda**  
+- 📱 **Responsive Design**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧩 Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Tecnología | Descripción |
+|-------------|-------------|
+| ⚛️ React | Librería principal para la interfaz |
+| 🧱 Vite | Entorno de desarrollo rápido |
+| 🧭 React Router DOM | Manejo de rutas y navegación |
+| 💾 LocalStorage | Persistencia del carrito |
+| 🧰 Context API | Estado global del carrito |
+| 🎨 CSS Modules | Estilos modulares y personalizables |
+
+
+---
+
+## 🧠 Estructura del proyecto
+src/
+├─ components/
+│ ├─ Header/
+│ ├─ Footer/
+│ ├─ ProductCard/
+│
+├─ contexts/
+│ └─ CartContext/
+│ ├─ CartProvider.jsx
+│ └─ useCartContext.jsx
+│
+├─ pages/
+│ ├─ Home/
+│ ├─ Detail/
+│ └─ Cart/
+│
+├─ App.jsx
+├─ main.jsx
+└─ App.css
