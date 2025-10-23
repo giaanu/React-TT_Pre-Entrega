@@ -96,3 +96,6 @@ button:hover {
   background-color: var(--zelda-light);
   box-shadow: 0 0 10px var(--zelda-glow);
 }
+html, body, #root {
+  height: 100%;
+}

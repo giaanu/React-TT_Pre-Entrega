@@ -27,9 +27,9 @@ export const ItemListContainer = () => {
   if (loading) return <p>Cargando productos...</p>;
 
   return (
-    <section>
-      <h1>Bienvenido a Ocarina Store</h1>
-      <ItemList list={products} />
-    </section>
-  );
+  <section className="item-list-container">
+    <h1>Bienvenido a Ocarina Store</h1>
+    <ItemList list={products} />
+  </section>
+);
 };
