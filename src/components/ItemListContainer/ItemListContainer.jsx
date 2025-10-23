@@ -1,28 +1,35 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { ItemList } from "../ItemList/ItemList";
 
 export const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/data/products.json")
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error("Hubo un problema al buscar productos");
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch("https://fakestoreapi.com/products");
+        if (!response.ok) {
+          throw new Error("Hubo un problema al buscar los productos");
         }
-        return res.json();
-      })
-      .then((data) => {
+        const data = await response.json();
         setProducts(data);
-      })
-      .catch((err) => {console.log(err)});
+      } catch (error) {
+        console.error("Error al obtener productos:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
   }, []);
+
+  if (loading) return <p>Cargando productos...</p>;
 
   return (
     <section>
       <h1>Bienvenido a Ocarina Store</h1>
-      <ItemList list = {products} />
+      <ItemList list={products} />
     </section>
   );
 };

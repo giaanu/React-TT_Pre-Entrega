@@ -4,48 +4,48 @@
     "name": "CPU",
     "price": 399999,
     "description": "AMD Procesador de escritorio Ryzen 5 7600X",
-    "imageUrl": "/images/cpu.jpg"
+    "imageUrl": "/pre-entrega/public/images/cpu.jpg"
   },
   {
     "id": 2,
     "name": "Fuente",
     "price": 439999,
     "description": "Fuente de Poder Asus Rog Strix 750W.",
-    "imageUrl": "/images/fuente.jpg"
+    "imageUrl": "/pre-entrega/public/images/fuente.jpg"
   },
   {
     "id": 3,
     "name": "Placa de Video Nvidea Geforce 4070",
     "price": 1779999,
     "description": "Placa de Video Asus Rog Strix GeForce RTX 4070.",
-    "imageUrl": "/images/gpu.jpg"
+    "imageUrl": "/pre-entrega/public/images/gpu.jpg"
   },
   {
     "id": 4,
     "name": "Memoria RAM DDR5",
     "price": 220000,
     "description": "Memoria RAM DDR5 16gb Corsair Vengeance Black",
-    "imageUrl": "/images/ram.jpg"
+    "imageUrl": "/pre-entrega/public/images/ram.jpg"
   },
   {
     "id": 5,
     "name": "Gabinete Gamer Antec C5",
     "price": 80000,
     "description": "Gabinete gamer RGB con ventana lateral de vidrio templado",
-    "imageUrl": "/images/gabinete.jpeg"
+    "imageUrl": "/pre-entrega/public/images/gabinete.jpeg"
   },
   {
     "id": 6,
     "name": "Motherboard Asus",
     "price": 499000,
     "description": "Placa Madre Asus ROG Strix X870E-E socket AM5",
-    "imageUrl": "/images/motherboard.jpge"
+    "imageUrl": "/pre-entrega/public/images/motherboard.jpeg"
   },
   {
     "id": 7,
     "name": "Disco SSD",
     "price": 99499,
     "description": "Disco Ssd XPG Spectrix S20G 1TB",
-    "imageUrl": "/images/ssd.jpg"
+    "imageUrl": "/pre-entrega/public/images/ssd.jpg"
   }
 ]

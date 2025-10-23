@@ -1,0 +1,29 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #e3f9e5;
+  background: radial-gradient(circle at top, #004d00 0%, #001a00 100%);
+  min-height: 80vh;
+}
+
+.home-image {
+  width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 10px #00ff99);
+}
+
+.home-container h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #a8ffbf;
+}
+
+.home-container p {
+  font-size: 1.2rem;
+  color: #bdf0d4;
+}

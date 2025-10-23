@@ -1,0 +1,54 @@
+.footer {
+  background: linear-gradient(180deg, #003300, #001a00);
+  padding: 1.5rem 0;
+  text-align: center;
+  color: #bdf0d4;
+  border-top: 2px solid #00cc66;
+  margin-top: 2rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.footer-logo {
+  width: 50px;
+  height: auto;
+  filter: drop-shadow(0 0 6px #00ff99);
+  animation: float 3s ease-in-out infinite;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  opacity: 0.85;
+}
+
+/* Íconos sociales */
+.social-icons {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 0.3rem;
+}
+
+.social-icons a {
+  color: #bdf0d4;
+  font-size: 1.6rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00ff99;
+  transform: scale(1.2);
+}
+
+/* Animación flotante para el logo */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}

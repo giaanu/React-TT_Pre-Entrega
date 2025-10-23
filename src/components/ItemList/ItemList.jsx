@@ -1,18 +1,18 @@
+import "./ItemList.css"
 import { Item } from "../Item/Item";
-import { Link } from "react-router-dom"
 
 export const ItemList = ({ list }) => {
-    return (
-        <>
-            {list.lenght ? (
-                list.map((prod) => (
-                    <Link to={`/detail/${prod.id}`} key={prod.id}>
-                        <Item {...prod} />
-                    </Link>
-                ))
-            ) : (
-                <p>No hay productos</p>
-            )}
-        </>
-    );
+  return (
+    <div className="product-list">
+      {list.map((prod) => (
+        <Item
+          key={prod.id}
+          name={prod.title}
+          price={prod.price}
+          description={prod.description}
+          imageUrl={prod.image}
+        />
+      ))}
+    </div>
+  );
 };
