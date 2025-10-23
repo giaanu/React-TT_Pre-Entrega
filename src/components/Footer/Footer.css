@@ -28,7 +28,6 @@
   opacity: 0.85;
 }
 
-/* Íconos sociales */
 .social-icons {
   display: flex;
   gap: 1.2rem;
@@ -46,7 +45,6 @@
   transform: scale(1.2);
 }
 
-/* Animación flotante para el logo */
 @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-5px); }

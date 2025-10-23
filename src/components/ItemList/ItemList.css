@@ -6,7 +6,7 @@
 }
 
 .product-item {
-  background: rgba(11, 61, 11, 0.85); /* mismo tono translúcido */
+  background: rgba(11, 61, 11, 0.85);
   border: 2px solid var(--zelda-gold);
   border-radius: 12px;
   padding: 1rem;
