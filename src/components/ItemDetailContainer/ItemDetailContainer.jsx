@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import { ItemDetail } from "../ItemDetail/ItemDetail.jsx"
+
 
 export const ItemDetailContainer = () => {
     const [detail, setDetail] = useState({})
@@ -29,7 +31,7 @@ export const ItemDetailContainer = () => {
     return (
         <main>
             {Object.keys(detail).length ? (
-                <IttemDetail detail={detail} />
+                <ItemDetail detail={detail} />
             ) : (
                 <p>Cargando...</p>
             )}

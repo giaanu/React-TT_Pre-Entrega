@@ -24,8 +24,8 @@ export const CartProvider = ({children}) => {
     }
 
     const getTotalItems = () => {
-        if (cart.lenght){
-            return cart.lenght;
+        if (cart.length){
+            return cart.length;
         }
     };
 

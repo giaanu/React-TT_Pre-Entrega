@@ -3,49 +3,49 @@
     "id": 1,
     "name": "CPU",
     "price": 399999,
-    "imageUrl": "/src/assets/img/cpu.jpg",
-    "description": "AMD Procesador de escritorio Ryzen 5 7600X"
+    "description": "AMD Procesador de escritorio Ryzen 5 7600X",
+    "imageUrl": "/images/cpu.jpg"
   },
   {
     "id": 2,
     "name": "Fuente",
     "price": 439999,
-    "imageUrl": "/src/assets/img/fuente.jpg",
-    "description": "Fuente de Poder Asus Rog Strix 750W."
+    "description": "Fuente de Poder Asus Rog Strix 750W.",
+    "imageUrl": "/images/fuente.jpg"
   },
   {
     "id": 3,
     "name": "Placa de Video Nvidea Geforce 4070",
     "price": 1779999,
-    "imageUrl": "/src/assets/img/gpu.jpg",
-    "description": "Placa de Video Asus Rog Strix GeForce RTX 4070."
+    "description": "Placa de Video Asus Rog Strix GeForce RTX 4070.",
+    "imageUrl": "/images/gpu.jpg"
   },
   {
     "id": 4,
     "name": "Memoria RAM DDR5",
     "price": 220000,
-    "imageUrl": "/src/assets/img/ram.jpg",
-    "description": "Memoria RAM DDR5 16gb Corsair Vengeance Black"
+    "description": "Memoria RAM DDR5 16gb Corsair Vengeance Black",
+    "imageUrl": "/images/ram.jpg"
   },
   {
     "id": 5,
     "name": "Gabinete Gamer Antec C5",
     "price": 80000,
-    "imageUrl": "/src/assets/img/gabinete.jpeg",
-    "description": "Gabinete gamer RGB con ventana lateral de vidrio templado"
+    "description": "Gabinete gamer RGB con ventana lateral de vidrio templado",
+    "imageUrl": "/images/gabinete.jpeg"
   },
   {
     "id": 6,
     "name": "Motherboard Asus",
     "price": 499000,
-    "imageUrl": "/src/assets/img/motherboard.jpeg",
-    "description": "Placa Madre Asus ROG Strix X870E-E socket AM5"
+    "description": "Placa Madre Asus ROG Strix X870E-E socket AM5",
+    "imageUrl": "/images/motherboard.jpge"
   },
   {
     "id": 7,
     "name": "Disco SSD",
     "price": 99499,
-    "imageUrl": "/assets/img/ssd.jpg",
-    "description": "Disco Ssd XPG Spectrix S20G 1TB"
+    "description": "Disco Ssd XPG Spectrix S20G 1TB",
+    "imageUrl": "/images/ssd.jpg"
   }
 ]

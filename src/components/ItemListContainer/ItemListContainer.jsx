@@ -21,7 +21,7 @@ export const ItemListContainer = () => {
 
   return (
     <section>
-      <h1>Bienvenido</h1>
+      <h1>Bienvenido a Ocarina Store</h1>
       <ItemList list = {products} />
     </section>
   );

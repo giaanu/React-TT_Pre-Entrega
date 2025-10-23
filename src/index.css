@@ -1,68 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  --zelda-green: #0b3d0b;
+  --zelda-gold: #e0c36f;
+  --zelda-light: #fdf4c1;
+  --zelda-glow: #00ff73;
+  --zelda-dark: #031a03;
 }
 
 body {
+  background: radial-gradient(circle, var(--zelda-dark) 0%, #000 100%);
+  font-family: 'MedievalSharp', cursive;
+  color: var(--zelda-light);
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+h1, h2, h3 {
+  text-shadow: 0 0 10px var(--zelda-glow);
+  text-align: center;
+  color: var(--zelda-gold);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, var(--zelda-green), var(--zelda-dark));
+  box-shadow: 0 0 15px var(--zelda-glow);
+}
+
+nav h1 {
+  color: var(--zelda-gold);
+  font-size: 1.8rem;
+}
+
+nav .cart {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--zelda-light);
+}
+
+nav .cart img {
+  width: 28px;
+  filter: drop-shadow(0 0 5px var(--zelda-gold));
+}
+
+.item-list-container {
+  padding: 2rem;
+}
+
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.item-card {
+  background: rgba(11, 61, 11, 0.8);
+  border: 2px solid var(--zelda-gold);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  color: var(--zelda-light);
+  box-shadow: 0 0 10px var(--zelda-glow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.item-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--zelda-gold);
+}
+
+.item-card img {
+  width: 100%;
+  border-radius: 8px;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--zelda-gold);
+  border: none;
+  color: var(--zelda-dark);
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: all 0.2s ease;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+button:hover {
+  background-color: var(--zelda-light);
+  box-shadow: 0 0 10px var(--zelda-glow);
 }
